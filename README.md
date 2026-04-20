@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Documentation: Stock Market Price Prediction Using ARIMA, LSTM, and Prophet
 1. Libraries and Tools
 The following libraries were used for data processing, model building, and evaluation:
@@ -87,3 +88,7 @@ In this analysis, multiple models (ARIMA, LSTM, Prophet) were applied to forecas
 •	Prophet offers flexibility in handling seasonality and trends, making it suitable for time series forecasting.
 The results from each model can be compared and evaluated using performance metrics such as MSE, RMSE, and MAE, as well as visualizations to determine the best-performing model for stock price prediction.
 
+=======
+# stock-prediction-web-app
+A full-stack machine learning web application that predicts stock prices using ARIMA, LSTM, and Prophet models with interactive visualizations and real-time forecasting dashboard.
+>>>>>>> 26fd419f6fa44ea05a1bc5cee9e10bfc7ce93e21
