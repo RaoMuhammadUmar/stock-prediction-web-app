@@ -1,0 +1,222 @@
+[2026-04-19T10:04:27.196415] [cbf_1776593046_s37u] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:04:27.196357] [cbf_1776593046_o1mt] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:04:27.206196] [cbf_1776593046_p2co] [BACKEND] [BACKEND_START] get_predictions called with model=ARIMA, horizon=7
+[2026-04-19T10:04:27.206518] [cbf_1776593046_p2co] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_6238eb1d8cc0
+[2026-04-19T10:04:27.702612] [cbf_1776593046_o1mt] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:04:27.703547] [cbf_1776593046_s37u] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:04:27.801624] [cbf_1776593046_p2co] [BACKEND] [BACKEND_STEP] Running ARIMA prediction
+[2026-04-19T10:04:31.384682] [cbf_1776593046_p2co] [BACKEND] [BACKEND_STEP] cache_write for key=pred_6238eb1d8cc0
+[2026-04-19T10:04:31.384910] [cbf_1776593046_p2co] [BACKEND] [BACKEND_SUCCESS] Generated 7 predictions using ARIMA
+[2026-04-19T10:04:42.386390] [cbf_1776593074_lmg3] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=7
+[2026-04-19T10:04:42.386853] [cbf_1776593074_lmg3] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_4a781556347b
+[2026-04-19T10:04:42.418386] [cbf_1776593074_82rn] [BACKEND] [BACKEND_START] get_predictions called with model=LSTM, horizon=7
+[2026-04-19T10:04:42.418755] [cbf_1776593074_82rn] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_75e7514cee58
+[2026-04-19T10:04:42.797207] [cbf_1776593074_lmg3] [BACKEND] [BACKEND_STEP] Running Prophet prediction
+[2026-04-19T10:04:42.839836] [cbf_1776593074_82rn] [BACKEND] [BACKEND_STEP] Running LSTM (Simple Mock as real LSTM training is slow)
+[2026-04-19T10:04:43.138901] [cbf_1776593074_lmg3] [BACKEND] ERROR: 10:04:43 - cmdstanpy - INFO - Chain [1] start processing
+[2026-04-19T10:04:43.241892] [cbf_1776593074_82rn] [BACKEND] [BACKEND_STEP] cache_write for key=pred_75e7514cee58
+[2026-04-19T10:04:43.242005] [cbf_1776593074_82rn] [BACKEND] [BACKEND_SUCCESS] Generated 7 predictions using LSTM
+[2026-04-19T10:04:43.903790] [cbf_1776593074_lmg3] [BACKEND] ERROR: 10:04:43 - cmdstanpy - INFO - Chain [1] done processing
+[2026-04-19T10:04:44.841883] [cbf_1776593074_lmg3] [BACKEND] [BACKEND_STEP] cache_write for key=pred_4a781556347b
+[2026-04-19T10:04:44.841961] [cbf_1776593074_lmg3] [BACKEND] [BACKEND_SUCCESS] Generated 7 predictions using Prophet
+[2026-04-19T10:05:02.462754] [cbf_1776593098_3i4a] [BACKEND] [BACKEND_START] get_predictions called with model=LSTM, horizon=7
+[2026-04-19T10:05:02.463075] [cbf_1776593098_3i4a] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_75e7514cee58
+[2026-04-19T10:05:08.566734] [cbf_1776593104_nnnk] [BACKEND] [BACKEND_START] get_predictions called with model=LSTM, horizon=7
+[2026-04-19T10:05:08.567083] [cbf_1776593104_nnnk] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_75e7514cee58
+[2026-04-19T10:05:08.722354] [cbf_1776593104_nnnk] [BACKEND] [BACKEND_STEP] Running LSTM Proxy (Trend-aware momentum)
+[2026-04-19T10:05:08.723566] [cbf_1776593104_nnnk] [BACKEND] [BACKEND_STEP] cache_write for key=pred_75e7514cee58
+[2026-04-19T10:05:08.723672] [cbf_1776593104_nnnk] [BACKEND] [BACKEND_SUCCESS] Generated 7 predictions using LSTM
+[2026-04-19T10:08:16.229980] [tool_1776593286_tit3] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:08:16.416792] [tool_1776593286_tit3] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:08:16.993261] SUCCESS: Function get_stock_metrics completed.
+[2026-04-19T10:08:29.114754] [manual_1693234] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:08:29.424224] [manual_1693234] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:08:30.622188] SUCCESS: Function get_stock_metrics completed.
+[2026-04-19T10:08:32.308246] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:08:32.626075] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:08:33.498758] SUCCESS: Function get_stock_metrics completed.
+[2026-04-19T10:08:54.727513] [manual_1693264] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:08:54.912027] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:08:55.549737] SUCCESS: Function get_stock_metrics completed.
+[2026-04-19T10:09:18.995074] [manual_1693264] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:09:19.890643] [manual_1693264] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-19T10:09:19.891327] [manual_1693264] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_28a07616426a
+[2026-04-19T10:09:20.790535] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:09:22.490107] [manual_1693264] [BACKEND] [BACKEND_STEP] Running Prophet prediction
+[2026-04-19T10:09:25.690959] [manual_1693264] [BACKEND] ERROR: 10:09:25 - cmdstanpy - INFO - Chain [1] start processing
+[2026-04-19T10:09:25.912604] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-19T10:09:30.296338] [manual_1693264] [BACKEND] ERROR: 10:09:30 - cmdstanpy - INFO - Chain [1] done processing
+[2026-04-19T10:09:40.192998] [manual_1693264] [BACKEND] [BACKEND_STEP] cache_write for key=pred_28a07616426a
+[2026-04-19T10:09:40.194565] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Generated 30 predictions using Prophet
+[2026-04-19T10:09:48.615992] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-19T10:09:52.291120] [manual_1693264] [BACKEND] [BACKEND_START] get_predictions called with model=ARIMA, horizon=30
+[2026-04-19T10:09:52.291502] [manual_1693264] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_eaf15791d39a
+[2026-04-19T10:09:52.990448] [manual_1693264] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:09:54.690037] [manual_1693264] [BACKEND] [BACKEND_STEP] Running ARIMA prediction
+[2026-04-19T10:09:55.591996] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:09:55.810496] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-19T10:09:59.288591] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-19T10:09:59.289435] [run_1776593304_4adi] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-19T10:09:59.487601] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-19T10:10:03.787037] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:10:05.588794] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:10:04.207873] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-19T10:10:05.397706] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-19T10:10:07.685473] [manual_1693264] [BACKEND] [BACKEND_STEP] cache_write for key=pred_eaf15791d39a
+[2026-04-19T10:10:07.685625] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Generated 30 predictions using ARIMA
+[2026-04-19T10:10:06.931387] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-19T10:10:09.508482] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-19T10:10:10.511966] SUCCESS: Function get_predictions completed. args={"model_type": "ARIMA", "horizon_days": 30}
+[2026-04-19T10:10:13.419995] [manual_1693264] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:10:13.432099] [manual_1693264] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-19T10:10:13.432449] [manual_1693264] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-19T10:10:13.730122] [manual_1693264] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:10:14.722472] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-19T10:10:14.919028] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-19T10:10:48.104706] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-19T10:10:48.794240] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-19T10:10:50.761711] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-19T10:10:52.987960] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-19T10:10:53.415601] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-19T10:10:56.112173] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_historical_data called with time_range=Max
+[2026-04-19T10:10:55.560163] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-19T10:10:57.088719] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Returning 11094 records for Max
+[2026-04-19T10:10:58.985341] SUCCESS: Function get_historical_data completed. args={"time_range": "Max"}
+[2026-04-19T10:11:01.049168] [manual_1693388] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T10:11:01.227726] [manual_1693388] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T10:11:02.002601] SUCCESS: Function get_stock_metrics completed.
+[2026-04-19T12:37:46.793310] [manual_1702194] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-19T12:37:47.002863] [manual_1702194] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-19T12:37:47.609349] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T07:54:58.252014] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T07:54:58.411493] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T07:54:58.918655] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:01:59.470632] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:01:59.625417] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:02:00.233163] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:14:39.083866] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:14:39.238655] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:14:39.829668] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:19:05.154623] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:19:05.321373] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:19:05.920997] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:19:56.581794] [published_aae684c16249] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:19:56.739120] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:19:57.382012] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:26:55.725418] [published_aae684c16249] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:26:55.874741] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:26:56.452096] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:27:16.495831] [published_aae684c16249] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T08:27:16.708047] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T08:27:17.309570] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T08:27:22.932779] [published_aae684c16249] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:27:23.086392] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:27:23.640401] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T08:34:50.068991] [published_aae684c16249] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T08:34:50.247810] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T08:34:50.879779] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T08:35:41.933256] [published_aae684c16249] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T08:35:41.934763] [published_aae684c16249] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T08:35:42.314400] [published_aae684c16249] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T08:35:42.740377] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T08:35:43.098108] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T08:35:43.693835] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T08:41:56.621807] [published_aae684c16249] [BACKEND] [BACKEND_START] get_predictions called with model=ARIMA, horizon=30
+[2026-04-20T08:41:56.622198] [published_aae684c16249] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_eaf15791d39a
+[2026-04-20T08:41:57.826204] [published_aae684c16249] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T08:41:58.141492] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T08:41:57.831665] SUCCESS: Function get_predictions completed. args={"model_type": "ARIMA", "horizon_days": 30}
+[2026-04-20T08:41:58.779270] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T08:42:15.866662] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T08:42:16.022973] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T08:42:16.559736] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T09:07:49.517839] [published_aae684c16249] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T09:07:49.682902] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T09:07:50.272042] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T09:29:05.741802] [published_aae684c16249] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T09:29:05.908948] [published_aae684c16249] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T09:29:06.500790] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T09:53:52.589320] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T09:53:52.801510] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T09:53:53.464742] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T09:54:56.117930] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T09:54:56.347935] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T09:54:57.004970] SUCCESS: Function get_stock_metrics completed.
+[2026-04-20T09:57:36.204857] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:57:36.403467] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:57:37.873046] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:58:44.009319] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:58:44.086512] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:58:44.104076] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:58:44.312844] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:58:44.792175] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:58:44.793472] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:58:49.014388] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:58:49.186037] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:58:49.186454] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:58:54.612303] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:58:54.792305] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:58:55.699777] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:58:56.292455] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:58:56.292630] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:58:53.600322] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:58:57.398662] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:58:57.707752] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:58:58.201017] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:58:59.295981] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:59:00.895657] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:59:01.225118] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:01.997173] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:58:58.518044] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:58:58.397002] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:59:02.487990] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:02.891689] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:59:02.892088] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:59:04.608080] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=5Y
+[2026-04-20T09:59:04.988310] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:59:01.098950] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:59:06.699652] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 1258 records for 5Y
+[2026-04-20T09:59:03.913183] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:09.114617] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:08.533869] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:59:08.963243] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:59:11.390661] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:59:09.899021] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:59:09.953288] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:59:13.286868] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:11.510963] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:11.756265] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:59:11.625336] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:12.759521] SUCCESS: Function get_historical_data completed. args={"time_range": "5Y"}
+[2026-04-20T09:59:14.523188] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:16.319812] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:22.135971] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:59:22.492287] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:22.618696] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T09:59:22.619051] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T09:59:23.730894] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T09:59:23.921308] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T09:59:54.490472] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=ARIMA, horizon=30
+[2026-04-20T09:59:54.491889] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_eaf15791d39a
+[2026-04-20T09:59:55.686238] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T09:59:57.093522] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T09:59:59.687620] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=LSTM, horizon=30
+[2026-04-20T09:59:59.688014] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_miss for key=pred_95ffe2fa83ef
+[2026-04-20T09:59:58.798984] SUCCESS: Function get_predictions completed. args={"model_type": "ARIMA", "horizon_days": 30}
+[2026-04-20T10:00:00.094900] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T10:00:00.700438] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] Running LSTM Proxy (Trend-aware momentum)
+[2026-04-20T10:00:00.704602] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_write for key=pred_95ffe2fa83ef
+[2026-04-20T10:00:00.704734] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Generated 30 predictions using LSTM
+[2026-04-20T10:00:01.113334] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_predictions called with model=Prophet, horizon=30
+[2026-04-20T10:00:01.113780] [published_a69de72689a6] [BACKEND] [BACKEND_STEP] cache_hit for key=pred_28a07616426a
+[2026-04-20T10:00:01.297350] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T10:00:01.689341] [published_a69de72689a6] [BACKEND] [BACKEND_START] get_historical_data called with time_range=1Y
+[2026-04-20T10:00:01.106421] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T10:00:02.798703] [published_a69de72689a6] [BACKEND] [BACKEND_SUCCESS] Returning 252 records for 1Y
+[2026-04-20T10:00:03.612580] SUCCESS: Function get_predictions completed. args={"model_type": "LSTM", "horizon_days": 30}
+[2026-04-20T10:00:04.223236] SUCCESS: Function get_predictions completed. args={"model_type": "Prophet", "horizon_days": 30}
+[2026-04-20T10:00:04.516100] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T10:00:05.115150] SUCCESS: Function get_historical_data completed. args={"time_range": "1Y"}
+[2026-04-20T10:03:37.869454] [run_1776593304_4adi] [BACKEND] [BACKEND_START] get_stock_metrics called
+[2026-04-20T10:03:38.029805] [run_1776593304_4adi] [BACKEND] [BACKEND_SUCCESS] Stock metrics calculated: price=248.1300048828125
+[2026-04-20T10:03:38.623665] SUCCESS: Function get_stock_metrics completed.
