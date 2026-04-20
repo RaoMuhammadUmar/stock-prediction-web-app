@@ -3,6 +3,11 @@
 A **full-stack AI-powered stock prediction system** that forecasts Apple stock prices using **ARIMA, LSTM, and Prophet models**, combined with an interactive web dashboard for visualization and analysis.
 
 ---
+## 🎥 Project Demo
+
+👉 Click to watch full working demo:
+
+[▶ Watch Demo Video](apps/apple_stock_analysis/frontend/public/assets/web-preview.mp4)
 
 ## 🚀 Live Features
 
